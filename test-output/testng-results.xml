@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-26T12:10:44 COT" name="All Test Suite" finished-at="2022-08-26T12:11:12 COT" duration-ms="28630">
+    <groups>
+    </groups>
+    <test started-at="2022-08-26T12:10:44 COT" name="C:/Users/ervin.rojas/Projects/Amazon3ExerciseUnosquare" finished-at="2022-08-26T12:11:12 COT" duration-ms="28630">
+      <class name="ExecutionProject.TestNG">
+        <test-method signature="the_user_is_on_login_page()[pri:1, instance:ExecutionProject.TestNG@6aaceffd]" started-at="2022-08-26T12:10:44 COT" name="the_user_is_on_login_page" finished-at="2022-08-26T12:10:49 COT" duration-ms="5302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- the_user_is_on_login_page -->
+        <test-method signature="the_user_enter_valid_credentials()[pri:2, instance:ExecutionProject.TestNG@6aaceffd]" started-at="2022-08-26T12:10:49 COT" name="the_user_enter_valid_credentials" finished-at="2022-08-26T12:10:50 COT" duration-ms="839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- the_user_enter_valid_credentials -->
+        <test-method signature="searching_cell_phone()[pri:3, instance:ExecutionProject.TestNG@6aaceffd]" started-at="2022-08-26T12:10:50 COT" name="searching_cell_phone" finished-at="2022-08-26T12:10:58 COT" duration-ms="7841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searching_cell_phone -->
+        <test-method signature="comparing_second_price()[pri:4, instance:ExecutionProject.TestNG@6aaceffd]" started-at="2022-08-26T12:10:58 COT" name="comparing_second_price" finished-at="2022-08-26T12:10:59 COT" duration-ms="1090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparing_second_price -->
+        <test-method signature="comparing_third_price()[pri:5, instance:ExecutionProject.TestNG@6aaceffd]" started-at="2022-08-26T12:10:59 COT" name="comparing_third_price" finished-at="2022-08-26T12:11:03 COT" duration-ms="3867" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Subtotal ([3 productos]):> but was:<Subtotal ([1 producto]):>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Subtotal ([3 productos]):> but was:<Subtotal ([1 producto]):>
+at junit.framework.Assert.assertEquals(Assert.java:85)
+at junit.framework.Assert.assertEquals(Assert.java:91)
+at FrameworkProject.ParentsClass.compareText(ParentsClass.java:32)
+at ExecutionProject.TestNG.comparing_third_price(TestNG.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparing_third_price -->
+        <test-method signature="adding_new_product()[pri:6, instance:ExecutionProject.TestNG@6aaceffd]" started-at="2022-08-26T12:11:03 COT" name="adding_new_product" finished-at="2022-08-26T12:11:12 COT" duration-ms="9638" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Subtotal ([4] productos):> but was:<Subtotal ([2] productos):>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Subtotal ([4] productos):> but was:<Subtotal ([2] productos):>
+at junit.framework.Assert.assertEquals(Assert.java:85)
+at junit.framework.Assert.assertEquals(Assert.java:91)
+at FrameworkProject.ParentsClass.compareText(ParentsClass.java:32)
+at ExecutionProject.TestNG.adding_new_product(TestNG.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adding_new_product -->
+      </class> <!-- ExecutionProject.TestNG -->
+    </test> <!-- C:/Users/ervin.rojas/Projects/Amazon3ExerciseUnosquare -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
